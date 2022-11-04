@@ -1,0 +1,14 @@
+#img-background {
+    background-image: url("../../../img/logo-design/testebackground.png");
+    height: 300px;
+}
+#background-formulario {
+    margin-top: -100px;
+
+    background-image: linear-gradient(to top, transparent 5%, #fff 70%), url("../../../img/logo-design/Background-Avermelhado.png");
+    background-size: cover;
+}
+#register-body {
+}
+
+

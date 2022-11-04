@@ -1,0 +1,49 @@
+.img-fluid {
+    border-radius: 1rem 0 0 1rem;
+}
+.login-title {
+    letter-spacing: 1px;
+    text-align: center;
+}
+#logo-image {
+    justify-content: space-around;
+}
+.botao-login {
+    display: flex;
+    justify-content: space-around;
+}
+.new-password {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.new-password-background {
+    background: repeating-linear-gradient(45deg, #d7810de6, #730505ed 100px);
+}
+#section-new-password {
+    margin-top: 70px;
+    padding: 0;
+}
+#div-centralizada {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (min-width: 768px) {
+    .campo-new-password {
+        width: 100%;
+    }
+}
+.div-botton {
+    display: flex;
+    justify-content: space-around;
+}
+.hover-animation:hover {
+    transition: 0.5s;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.img-prato {
+    margin-top: 10%;
+}

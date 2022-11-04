@@ -1,0 +1,140 @@
+.text-product {
+    font-family: 'PACIFICO', cursive;
+    color: #a45b05;
+    margin-top: 2px;
+    padding-bottom: 2px;
+
+}
+.lista-de-produtos {
+    width: 95%;
+    height: 300px;
+}
+.container-geral {
+    margin-top: 20px;
+}
+.cart-button {
+    position: relative;
+    display: flex;
+    padding: 10px;
+    width: 50%;
+    height: 50px;
+    border: 0;
+    border-radius: 10px;
+    background-color: #2e841c;
+    outline: none;
+    cursor: pointer;
+    margin-right: auto;
+    margin-left: auto;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+    overflow: hidden;
+    user-select: none;
+}
+
+.cart-button:hover {
+    background-color: #216213;
+}
+.cart-button:active {
+    transform: scale(0.9);
+}
+
+.cart-button .fa-shopping-cart {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: -10%;
+    font-size: 2em;
+    transform: translate(-50%, -50%);
+}
+
+.cart-button span {
+    position: absolute;
+    z-index: 3;
+    left: 50%;
+    top: 50%;
+    font-size: 1.2em;
+    color: #fff;
+    transform: translate(-50%, -50%);
+}
+.cart-button span.add-to-cart {
+    opacity: 1;
+}
+.cart-button span.added {
+    opacity: 0;
+}
+
+.cart-button.clicked .fa-shopping-cart {
+    animation: cart 1.5s ease-in-out forwards;
+}
+
+.cart-button.clicked span.add-to-cart {
+    animation: txt1 1.5s ease-in-out forwards;
+}
+.cart-button.clicked span.added {
+    animation: txt2 1.5s ease-in-out forwards;
+}
+@keyframes cart {
+    0% {
+        left: -10%;
+    }
+    40%,
+    60% {
+        left: 50%;
+    }
+    100% {
+        left: 110%;
+    }
+}
+
+@keyframes txt1 {
+    0% {
+        opacity: 1;
+    }
+    20%,
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes txt2 {
+    0%,
+    80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.pqt-plus,
+.pqt-minus {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    background: #fff;
+    border: none;
+    font-size: 20px;
+    padding: 0 20px;
+    width: 50px;
+    border-radius: 10px;
+    height: 50px;
+    user-select: none;
+    line-height: 50px;
+}
+
+.pqt-plus:hover,
+.pqt-minus:hover {
+    background: #de5613;
+    color: rgb(4, 4, 4);
+    cursor: pointer;
+}
+.element{margin-top:90px}
+
+#category {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+#category-product {
+    margin:  10px;
+}
